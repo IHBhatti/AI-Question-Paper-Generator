@@ -1,0 +1,216 @@
+2026-07-28 10:14:26,857 [INFO] rag.loader: 222 of 223 pages have no usable text layer — running OCR (this is normal for scanned textbook PDFs and may take a while the first time; results are cached).
+2026-07-28 10:28:07,471 [INFO] rag.loader: Loaded PDF 'Physics IX.pdf' with 223 pages
+2026-07-28 10:28:07,527 [INFO] rag.parser: Recovered chapter 'THERMAL PROPERTIES' from Table of Contents (estimated page 202) — its own heading wasn't detectable in the document body.
+2026-07-28 10:28:07,532 [INFO] rag.parser: Auto-detected 9 chapters
+2026-07-28 10:35:41,680 [INFO] rag.chunker: Created 409 chunks from 'Physics IX.pdf' across 223 pages
+2026-07-28 10:35:41,681 [INFO] rag.embeddings: Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-28 10:35:46,512 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:46,523 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-28 10:35:46,606 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:46,918 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:47,356 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:47,401 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-28 10:35:48,258 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:48,478 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:48,792 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:48,911 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-28 10:35:49,371 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:49,448 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:51,517 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:51,675 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:52,023 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-28 10:35:52,637 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:52,802 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:53,632 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-28 10:35:53,944 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-28 10:35:54,327 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-28 10:35:55,465 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-28 10:35:56,337 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:56,805 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:57,207 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:57,321 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-28 10:35:58,649 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:35:59,452 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-28 10:36:00,290 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:36:00,364 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-28 10:36:01,164 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-28 10:36:01,459 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-28 10:36:02,341 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-28 10:36:02,412 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-28 10:36:02,742 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-28 10:36:02,804 [INFO] rag.embeddings: Embedding 409 chunks into FAISS...
+2026-07-28 10:36:28,952 [INFO] faiss.loader: Loading faiss with AVX2 support.
+2026-07-28 10:36:28,953 [INFO] faiss.loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-28 10:36:28,954 [INFO] faiss.loader: Loading faiss.
+2026-07-28 10:36:30,131 [INFO] faiss.loader: Successfully loaded faiss.
+2026-07-28 10:36:30,185 [INFO] rag.embeddings: Saved vector store to C:\Users\N TECH\Downloads\AI_Test_Generator\vectorstore\1ee4220a26f2f066112bef979727c0e6c48dd4ca3293590473019b6d7deab9a6
+2026-07-28 11:14:18,757 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:18,803 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:18,833 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:18,833 [INFO] rag.retriever: Diverse retrieval collected 8 unique chunks
+2026-07-28 11:14:23,542 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-28 11:14:29,727 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:29,786 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:29,837 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:29,873 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:29,915 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:29,942 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-28 11:14:29,944 [INFO] rag.retriever: Diverse retrieval collected 8 unique chunks
+2026-07-28 11:14:41,199 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-28 11:28:04,425 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\N TECH\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\N TECH\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-29 11:00:48,844 [INFO] rag.embeddings: Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-29 11:00:56,156 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-07-29 11:00:56,676 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:00:56,875 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-29 11:00:57,576 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:00:57,921 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-29 11:00:58,038 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-29 11:00:58,465 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:00:58,501 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-29 11:00:58,621 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-29 11:00:58,987 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:00:59,087 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-29 11:00:59,982 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:00,175 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:00,586 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:00,890 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:01,406 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 11:01:01,808 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:01,949 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:09,106 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 11:01:09,621 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 11:01:10,054 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 11:01:10,444 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 11:01:10,857 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:11,013 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:11,528 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:11,623 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:12,447 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:12,891 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:13,285 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:13,439 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:14,021 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-29 11:01:14,568 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-29 11:01:16,651 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 11:01:16,744 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-29 11:01:17,375 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-29 11:01:17,638 [INFO] faiss.loader: Loading faiss with AVX2 support.
+2026-07-29 11:01:17,668 [INFO] faiss.loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-29 11:01:17,673 [INFO] faiss.loader: Loading faiss.
+2026-07-29 11:01:25,743 [INFO] faiss.loader: Successfully loaded faiss.
+2026-07-29 11:03:03,931 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:06,393 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:11,110 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:11,680 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:12,329 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:12,920 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:13,464 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:14,057 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:14,433 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:14,760 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:15,082 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:15,860 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:16,313 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:17,161 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:17,908 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:19,263 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:20,333 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:20,844 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:21,430 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 1: Physical Quantities and Measurement key concepts, de' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:22,034 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 3: Dynamics Tyre and Road d key concepts, definitions, ' chapters=['Unit 1: Physical Quantities and Measurement', 'Unit 3: Dynamics Tyre and Road d', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 11:03:22,043 [INFO] rag.retriever: Diverse retrieval collected 12 unique chunks
+2026-07-29 11:03:45,908 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 14:33:18,835 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\N TECH\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\N TECH\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-29 14:39:35,166 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\N TECH\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\N TECH\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-29 18:22:20,554 [INFO] rag.embeddings: Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-07-29 18:22:33,888 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:34,006 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-29 18:22:34,156 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-29 18:22:35,394 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:35,538 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-29 18:22:35,802 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-29 18:22:36,226 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:36,416 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-29 18:22:36,926 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:37,123 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-29 18:22:39,171 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:39,320 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-29 18:22:40,301 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:40,474 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-29 18:22:41,339 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 18:22:42,247 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:22:42,406 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-29 18:22:59,657 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 18:23:00,176 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 18:23:00,677 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 18:23:01,205 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-29 18:23:01,952 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:23:02,070 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-29 18:23:02,940 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:23:03,057 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-29 18:23:03,642 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:23:03,740 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-29 18:23:04,259 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:23:04,359 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-29 18:23:05,186 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-29 18:23:05,808 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-29 18:23:08,971 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-29 18:23:09,059 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-29 18:23:09,791 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-29 18:23:10,857 [INFO] faiss.loader: Loading faiss with AVX2 support.
+2026-07-29 18:23:10,885 [INFO] faiss.loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-29 18:23:10,888 [INFO] faiss.loader: Loading faiss.
+2026-07-29 18:23:42,575 [INFO] faiss.loader: Successfully loaded faiss.
+2026-07-29 18:26:23,998 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:24,551 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:25,021 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:25,533 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:25,901 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:26,293 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:26,777 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:27,165 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:27,648 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:28,018 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:28,498 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:29,231 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:30,042 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:30,582 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:31,116 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:31,812 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:32,433 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:32,845 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:33,235 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 2: Kinematics To discover this Galileo Galilei carried ' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:33,699 [INFO] rag.retriever: Retrieved 4 chunks for query='Unit 4: Turning Effect of Forces GE} EQUILIBRIUM key concept' chapters=['Unit 2: Kinematics To discover this Galileo Galilei carried out a', 'Unit 4: Turning Effect of Forces GE} EQUILIBRIUM']
+2026-07-29 18:26:33,704 [INFO] rag.retriever: Diverse retrieval collected 8 unique chunks
+2026-07-29 18:26:56,199 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 18:26:56,682 [WARNING] rag.generator: MCQs count mismatch — requested 20, got 21
