@@ -1,0 +1,22 @@
+# Secrets — never commit real API keys
+.env
+.streamlit/secrets.toml
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.venv/
+
+# Runtime working directories (regenerated automatically, no need to track)
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+vectorstore/*
+!vectorstore/.gitkeep
+data/*
+!data/.gitkeep
+
+# Logs
+app.log
